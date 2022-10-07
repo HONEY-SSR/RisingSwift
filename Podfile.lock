@@ -1,0 +1,29 @@
+PODS:
+  - SwiftySwift (3.0.0):
+    - SwiftySwift/Cocoa (= 3.0.0)
+    - SwiftySwift/Core (= 3.0.0)
+    - SwiftySwift/Geometry (= 3.0.0)
+    - SwiftySwift/MultiRange (= 3.0.0)
+    - SwiftySwift/UIKit (= 3.0.0)
+  - SwiftySwift/Cocoa (3.0.0):
+    - SwiftySwift/Core
+  - SwiftySwift/Core (3.0.0)
+  - SwiftySwift/Geometry (3.0.0):
+    - SwiftySwift/Core
+  - SwiftySwift/MultiRange (3.0.0)
+  - SwiftySwift/UIKit (3.0.0):
+    - SwiftySwift/Cocoa
+
+DEPENDENCIES:
+  - SwiftySwift
+
+SPEC REPOS:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - SwiftySwift
+
+SPEC CHECKSUMS:
+  SwiftySwift: dfb02560bec08882d6daff3603d9e5738af92ab3
+
+PODFILE CHECKSUM: cf2514a460ed27f5ee65f399b9b695b17843159d
+
+COCOAPODS: 1.11.3
