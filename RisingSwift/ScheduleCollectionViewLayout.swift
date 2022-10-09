@@ -8,7 +8,7 @@
 import UIKit
 
 protocol ScheduleCollectionViewLayoutDataSource: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, layout: ScheduleCollectionViewLayout, layForItemAt indexPath: IndexPath) -> (Int, Range<Int>)
+    func collectionView(_ collectionView: UICollectionView, layout: ScheduleCollectionViewLayout, layForItemAt indexPath: IndexPath) -> (week: Int, period: Range<Int>)
 }
 
 class ScheduleCollectionViewLayout: UICollectionViewLayout {
@@ -47,13 +47,41 @@ class ScheduleCollectionViewLayout: UICollectionViewLayout {
     }
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
-        let result = [UICollectionViewLayoutAttributes]()
+        var result = [UICollectionViewLayoutAttributes]()
         for section in 0..<sections {
             for elementKind in supplementaryAttributes.keys {
-                
+                let indexPath = IndexPath(item: 0, section: section)
+                let attribute = self.layoutAttributesForSupplementaryView(ofKind: elementKind, at: indexPath)
+                if attribute!.frame.intersects(rect) {
+                    result.append(attribute!)
+                }
+            }
+            let itemCounter = self.collectionView?.dataSource?.collectionView(self.collectionView!, numberOfItemsInSection: section)
+            for item in 0..<itemCounter! {
+                let indexPath = IndexPath(item: item, section: section)
+                let attribute = self.layoutAttributesForItem(at: indexPath)
+                if attribute!.frame.intersects(rect) {
+                    result.append(attribute!)
+                }
             }
         }
         return result
+    }
+    
+    override func layoutAttributesForSupplementaryView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+        var attribute = supplementaryAttributes[elementKind]![indexPath]
+        if attribute != nil {
+            return attribute
+        }
+        attribute = UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: elementKind, with: indexPath)
+        supplementaryAttributes[elementKind]![indexPath] = attribute
+        if elementKind == UICollectionView.elementKindSectionHeader {
+            let x = CGFloat(indexPath.section) * (self.collectionView?.bounds.size.width)!
+            let y = self.collectionView?.contentOffset.y
+            let frame = CGRect(x: x, y: y!, width: (self.collectionView?.bounds.size.width)!, height: self.heightForHeaderSupplementaryView)
+        }
+        
+        return attribute
     }
     
     func calculateLayoutIfNeeded() {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1475232C28F2CB4C0003D34A /* SwiftySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1475232B28F2CB4C0003D34A /* SwiftySwift.framework */; };
+		1475232D28F2CB4C0003D34A /* SwiftySwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1475232B28F2CB4C0003D34A /* SwiftySwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14990ACC28EFA92B00925FF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14990ACB28EFA92B00925FF1 /* AppDelegate.swift */; };
 		14990AD028EFA92B00925FF1 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14990ACF28EFA92B00925FF1 /* ScheduleViewController.swift */; };
 		14990AD628EFA92C00925FF1 /* RisingSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14990AD428EFA92C00925FF1 /* RisingSwift.xcdatamodeld */; };
@@ -19,9 +21,10 @@
 		14990B0128EFC3B600925FF1 /* ScheduleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14990B0028EFC3B600925FF1 /* ScheduleModel.swift */; };
 		14990B0328EFCB0400925FF1 /* ScheduleCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14990B0228EFCB0400925FF1 /* ScheduleCollectionViewLayout.swift */; };
 		14990B0528EFDF0100925FF1 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14990B0428EFDF0100925FF1 /* Extension.swift */; };
+		14990B0B28F04F5500925FF1 /* Pods_RisingSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14990B0A28F04F5500925FF1 /* Pods_RisingSwift.framework */; };
+		14990B0C28F04F5500925FF1 /* Pods_RisingSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14990B0A28F04F5500925FF1 /* Pods_RisingSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5F1DD0A1F7F3BC3CDD7CE2D1 /* Pods_RisingSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 105570F0C5A5B24167984C30 /* Pods_RisingSwiftTests.framework */; };
 		8217B6C842E25A840500531F /* Pods_RisingSwift_RisingSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C0B03B9BD4577FABD7E284 /* Pods_RisingSwift_RisingSwiftUITests.framework */; };
-		DEA9037318419700B9BAD35A /* Pods_RisingSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC04E4378099CDD69D804D1 /* Pods_RisingSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +44,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		14990B0928F04F0200925FF1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1475232D28F2CB4C0003D34A /* SwiftySwift.framework in Embed Frameworks */,
+				14990B0C28F04F5500925FF1 /* Pods_RisingSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		05C0B03B9BD4577FABD7E284 /* Pods_RisingSwift_RisingSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RisingSwift_RisingSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		105570F0C5A5B24167984C30 /* Pods_RisingSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RisingSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1475232B28F2CB4C0003D34A /* SwiftySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14990AC828EFA92B00925FF1 /* RisingSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RisingSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14990ACB28EFA92B00925FF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14990ACF28EFA92B00925FF1 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +79,8 @@
 		14990B0028EFC3B600925FF1 /* ScheduleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleModel.swift; sourceTree = "<group>"; };
 		14990B0228EFCB0400925FF1 /* ScheduleCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCollectionViewLayout.swift; sourceTree = "<group>"; };
 		14990B0428EFDF0100925FF1 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		14990B0628F04F0200925FF1 /* SwiftySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14990B0A28F04F5500925FF1 /* Pods_RisingSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_RisingSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		158B3FA67B928356F87A94F7 /* Pods-RisingSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RisingSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-RisingSwiftTests/Pods-RisingSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		66D30FFABFA876458587ED85 /* Pods-RisingSwift-RisingSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RisingSwift-RisingSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-RisingSwift-RisingSwiftUITests/Pods-RisingSwift-RisingSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		71CCDF2EB53476D5CACCCF84 /* Pods-RisingSwift-RisingSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RisingSwift-RisingSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-RisingSwift-RisingSwiftUITests/Pods-RisingSwift-RisingSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,7 +95,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEA9037318419700B9BAD35A /* Pods_RisingSwift.framework in Frameworks */,
+				1475232C28F2CB4C0003D34A /* SwiftySwift.framework in Frameworks */,
+				14990B0B28F04F5500925FF1 /* Pods_RisingSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +129,6 @@
 				158B3FA67B928356F87A94F7 /* Pods-RisingSwiftTests.debug.xcconfig */,
 				E9CE8AB8BE83A6676597F30F /* Pods-RisingSwiftTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -170,6 +191,9 @@
 		5C5BCBE9C134570652BE92C9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1475232B28F2CB4C0003D34A /* SwiftySwift.framework */,
+				14990B0A28F04F5500925FF1 /* Pods_RisingSwift.framework */,
+				14990B0628F04F0200925FF1 /* SwiftySwift.framework */,
 				AAC04E4378099CDD69D804D1 /* Pods_RisingSwift.framework */,
 				05C0B03B9BD4577FABD7E284 /* Pods_RisingSwift_RisingSwiftUITests.framework */,
 				105570F0C5A5B24167984C30 /* Pods_RisingSwiftTests.framework */,
@@ -188,7 +212,8 @@
 				14990AC428EFA92B00925FF1 /* Sources */,
 				14990AC528EFA92B00925FF1 /* Frameworks */,
 				14990AC628EFA92B00925FF1 /* Resources */,
-				FA6816E34B6566A28ADFE726 /* [CP] Embed Pods Frameworks */,
+				14990B0928F04F0200925FF1 /* Embed Frameworks */,
+				B2FFCB42D24DA00B9B6B027B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -226,7 +251,7 @@
 				14990AE728EFA92C00925FF1 /* Sources */,
 				14990AE828EFA92C00925FF1 /* Frameworks */,
 				14990AE928EFA92C00925FF1 /* Resources */,
-				EC0261AC6057B6E6C4924817 /* [CP] Embed Pods Frameworks */,
+				A225C58FD4CE67866B6C5957 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -352,6 +377,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A225C58FD4CE67866B6C5957 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RisingSwift-RisingSwiftUITests/Pods-RisingSwift-RisingSwiftUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RisingSwift-RisingSwiftUITests/Pods-RisingSwift-RisingSwiftUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RisingSwift-RisingSwiftUITests/Pods-RisingSwift-RisingSwiftUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2FFCB42D24DA00B9B6B027B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RisingSwift/Pods-RisingSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RisingSwift/Pods-RisingSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RisingSwift/Pods-RisingSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DA6396934B3559B6545F0C34 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -372,40 +431,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EC0261AC6057B6E6C4924817 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RisingSwift-RisingSwiftUITests/Pods-RisingSwift-RisingSwiftUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RisingSwift-RisingSwiftUITests/Pods-RisingSwift-RisingSwiftUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RisingSwift-RisingSwiftUITests/Pods-RisingSwift-RisingSwiftUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FA6816E34B6566A28ADFE726 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RisingSwift/Pods-RisingSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RisingSwift/Pods-RisingSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RisingSwift/Pods-RisingSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -591,8 +616,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 727CVV9PLJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RisingSwift/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Rising & SSR";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -619,8 +647,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 727CVV9PLJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RisingSwift/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Rising & SSR";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";

@@ -2,8 +2,9 @@ source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
 
 platform :ios, '11.0'
 
+use_frameworks!
+
 target 'RisingSwift' do
-	use_frameworks!
 
 	pod 'SwiftySwift'
 
