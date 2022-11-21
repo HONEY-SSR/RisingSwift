@@ -13,17 +13,23 @@ PODS:
   - SwiftySwift/MultiRange (3.0.0)
   - SwiftySwift/UIKit (3.0.0):
     - SwiftySwift/Cocoa
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - SwiftySwift
+  - YYKit
 
 SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - SwiftySwift
+    - YYKit
 
 SPEC CHECKSUMS:
   SwiftySwift: dfb02560bec08882d6daff3603d9e5738af92ab3
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 150a16e7c18002d307dd44ac5ea7a4c5eee0fbee
+PODFILE CHECKSUM: d9b50d9c72ba1fc015644bc9babf9c514a1e90e0
 
 COCOAPODS: 1.11.3

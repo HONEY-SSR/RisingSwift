@@ -44,6 +44,8 @@ class ScheduleCollectionViewLayout: UICollectionViewLayout {
         super.init()
         let width = ((self.collectionView?.bounds.size.width)! - self.widthForLeadingSupplementaryView) / 7 - self.columnSpacing
         itemSize = CGSizeMake(width, width / 46 * 50)
+        
+        
     }
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
